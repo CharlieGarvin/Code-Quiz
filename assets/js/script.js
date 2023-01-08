@@ -5,7 +5,6 @@ var questionText = document.getElementById('questionText');
 var choiceBtn = document.querySelectorAll('.q1');
 var questionIndex = 0;
 
-
 var question1 = {
     text: "this is question 1", 
     choices: ["a", "b", "c", "d"],
@@ -42,8 +41,7 @@ function startQuiz() {
     questions.classList.remove("hidden");
     questionText.textContent = quizQuestion[questionIndex].text;
     for (let i = 0; i < choiceBtn.length; i++) {
-        choiceBtn[i].textContent = quizQuestion[questionIndex].choices[i];
-        
+        choiceBtn[i].textContent = quizQuestion[questionIndex].choices[i];  
     }
 }
 
