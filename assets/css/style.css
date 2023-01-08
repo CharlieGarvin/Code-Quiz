@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(177, 179, 180);
+}
+
+#score {
+    float: right;
+}
+
+#score:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#timer {
+    display: inline-block;
+}
+
+#timer:hover {
+    cursor: default;
+}
+
+#description {
+    position: relative;
+    top: 10em;
+    left: 22%;
+    text-align: center;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 8px;
+    max-width: 60em;
+}
+
+#description:hover {
+    cursor: default;
+}
+
+#start {
+    font-size: 2em;
+    border-radius: 10px;
+}
+
+#start:hover {
+    cursor: pointer;
+}
