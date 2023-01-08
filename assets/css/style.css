@@ -43,3 +43,7 @@ body {
 #start:hover {
     cursor: pointer;
 }
+
+.hidden {
+    display: none;
+}
