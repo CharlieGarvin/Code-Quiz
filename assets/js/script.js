@@ -4,6 +4,8 @@ var questions = document.getElementById('questions');
 var questionText = document.getElementById('questionText');
 var choiceBtn = document.querySelectorAll('.q1');
 var questionIndex = 0;
+var timeEl = document.getElementById('timer');
+var timeLeft = 60;
 
 var question1 = {
     text: "this is question 1", 
@@ -43,5 +45,14 @@ function startQuiz() {
     for (let i = 0; i < choiceBtn.length; i++) {
         choiceBtn[i].textContent = quizQuestion[questionIndex].choices[i];  
     }
+    timer();
 }
 
+var timerInterval = setInterval( function timer() {
+    timeLeft--;
+    timeEl.textContent = "Time: " + timeLeft;
+
+    if(timeLeft === 0) {
+        clearInterval(timerInterval);
+    }
+}, 1000);
