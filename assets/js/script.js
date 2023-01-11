@@ -56,3 +56,11 @@ var timerInterval = setInterval( function timer() {
         clearInterval(timerInterval);
     }
 }, 1000);
+
+function nextQuestion() {
+
+}
+
+function chosenAnswer() {
+    
+}
