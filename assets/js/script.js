@@ -70,7 +70,8 @@ var timerInterval = setInterval( function timer() {
 
 
 function nextQuestion() {
-    resetQuestion()
+    //resetQuestion()
+
     displayQuestion(questionIndex) 
 }
 
@@ -87,22 +88,22 @@ function displayQuestion(quizQuestion) {
     })
 }
 
-function resetQuestion() {
+/*function resetQuestion() {
     choiceBtn.classList.add('hide')
     while (choiceBtn.firstChild) {
         choiceBtn.removeChild
         (choiceBtn.firstChild)
     }
-}
+}*/
 
 function chosenAnswer(e) {
     var selectedButton = e.target
     var correct = selectedButton.dataset.correct
-    statusClass(document.body, correct)
-    choiceBtn.classList.remove('hide')
+    //statusClass(document.body, correct)
+    //choiceBtn.classList.remove('hide')
 }
 
-function statusClass(element, correct) {
+/*function statusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
         element.classList.add('correct')
@@ -114,9 +115,4 @@ function statusClass(element, correct) {
 function clearStatusClass (element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
-}
-
-choiceBtn.addEventListener('click', () => {
-    questionIndex++
-    nextQuestion()
-})
+}*/
